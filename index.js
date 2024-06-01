@@ -25,7 +25,9 @@ app.use("/api/hospitals", hospitalRoute);
 
 // 라우트 설정
 const signupRoute = require("./routes/signup");
+const { checkUsername } = require("./controllers/check.controllers.js");
 app.use("/api/signup", signupRoute);
+app.use('/api/check', checkUsername);
 
 app.listen(3001, () => {
   console.log("서버 3001에서 돌아가는 중입니당");
