@@ -1,0 +1,303 @@
+[
+  {
+    "region": "강원도",
+    "address": "원주시 남원로 655",
+    "name": "로얄종합동물병원",
+    "treatedAnimals": "포유류 특수동물, 조류",
+    "phoneNumber": "033-766-7230"
+  },
+  {
+    "region": "경기도",
+    "address": "부천시 원미구 길주로 80",
+    "name": "맘스동물의료센터",
+    "treatedAnimals": "파충류",
+    "phoneNumber": "032-229-8275"
+  },
+  {
+    "region": "경기도",
+    "address": "안산시 상록구 화랑로 514 상가 2층 204호",
+    "name": "메디피쉬수산질병관리원",
+    "treatedAnimals": "어류",
+    "phoneNumber": "070-4647-1224"
+  },
+  {
+    "region": "경기도",
+    "address": "부천시 원미구 도약로 39",
+    "name": "동물사랑병원",
+    "treatedAnimals": "조류",
+    "phoneNumber": "032-323-8275"
+  },
+  {
+    "region": "경기도",
+    "address": "하남시 미사강변북로30번길 104",
+    "name": "미사늘봄동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": "031-793-8875"
+  },
+  {
+    "region": "경기도",
+    "address": "과천시 경마공원대로 107",
+    "name": "랫츠런파크서울동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": null
+  },
+  {
+    "region": "경기도",
+    "address": "과천시 과천동 685-3",
+    "name": "한국마사회 KRA 동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": null
+  },
+  {
+    "region": "경기도",
+    "address": "경기 과천시 경마공원대로 107",
+    "name": "마사랑동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": null
+  },
+  {
+    "region": "경기도",
+    "address": "남양주시 와부읍 석실로 200 1층 메디포즈동물병원",
+    "name": "메디포즈동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": "010-8995-6354"
+  },
+  {
+    "region": "경기도",
+    "address": "김포시 중봉로 4 다우동물병원",
+    "name": "다우동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": "031-985-7579"
+  },
+  {
+    "region": "경기도",
+    "address": "안양시 동안구 흥안대로 495",
+    "name": "인덕원종합동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": "031-426-0075"
+  },
+  {
+    "region": "경기도",
+    "address": "성남시 분당구 성남대로 385 102호",
+    "name": "24시폴동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": "031-717-7558"
+  },
+  {
+    "region": "경기도",
+    "address": "파주시 가재울로94번길 27",
+    "name": "금쪽금쪽반려동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": "031-944-9979"
+  },
+  {
+    "region": "경기도",
+    "address": "고양시 일산동구 무궁화로 8-28 삼성메르헨하우스 1층",
+    "name": "일산시티동물의료센터",
+    "treatedAnimals": "포유류 특수동물, 조류",
+    "phoneNumber": "031-932-0085"
+  },
+  {
+    "region": "경기도",
+    "address": "용인시 수지구 현암로125번길 6 그린프라자",
+    "name": "파우동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류",
+    "phoneNumber": "031-898-0330"
+  },
+  {
+    "region": "경기도",
+    "address": "수원시 장안구 파장로 109",
+    "name": "WE동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류",
+    "phoneNumber": "031-269-9975"
+  },
+  {
+    "region": "경기도",
+    "address": "고양시 덕양구 화신로272번길 5",
+    "name": "탑케어동물의료원",
+    "treatedAnimals": "포유류 특수동물, 파충류",
+    "phoneNumber": "1666-7501"
+  },
+  {
+    "region": "경기도",
+    "address": "고양시 일산동구 강석로 156 선경상가 101호",
+    "name": "가람동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "031-919-8275"
+  },
+  {
+    "region": "경기도",
+    "address": "수원시 장안구 조원로 135",
+    "name": "수원동물의료센터",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "031-251-0905"
+  },
+  {
+    "region": "경기도",
+    "address": "광명시 하안동 35-1",
+    "name": "고려종합동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "02-899-7582"
+  },
+  {
+    "region": "경기도",
+    "address": "남양주시 진접읍 금강로 1287 현대프라자",
+    "name": "펫월드동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "031-571-8575"
+  },
+  {
+    "region": "경기도",
+    "address": "고양시 일산동구 장항로 362",
+    "name": "바다애동물병원",
+    "treatedAnimals": "어류",
+    "phoneNumber": "031-904-3455"
+  },
+  {
+    "region": "경기도",
+    "address": "부천시 원미구 송내대로73번길 25",
+    "name": "부천수족관동물병원",
+    "treatedAnimals": "어류",
+    "phoneNumber": "032-321-5537"
+  },
+  {
+    "region": "대구광역시",
+    "address": "중구 동덕로 8길 30-9",
+    "name": "별난물고기병원",
+    "treatedAnimals": "어류",
+    "phoneNumber": "053-429-2114"
+  },
+  {
+    "region": "서울특별시",
+    "address": "강남구 도곡로 283",
+    "name": "이리온24시동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": "02-511-8383"
+  },
+  {
+    "region": "서울특별시",
+    "address": "강남구 남부순환로 2636 양재빌딩",
+    "name": "우리들동물병원",
+    "treatedAnimals": "포유류 특수동물",
+    "phoneNumber": "02-572-7582"
+  },
+  {
+    "region": "서울특별시",
+    "address": "서초구 서초동 1627-5 고려빌딩",
+    "name": "고려종합동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "02-575-7999"
+  },
+  {
+    "region": "서울특별시",
+    "address": "강남구 삼성동 160-2 동화빌딩",
+    "name": "아크리스동물의료센터",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "02-583-7582"
+  },
+  {
+    "region": "서울특별시",
+    "address": "성동구 행당동 226-3",
+    "name": "한양동물메디컬센터",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "02-2281-5200"
+  },
+  {
+    "region": "서울특별시",
+    "address": "노원구 상계동 371-2",
+    "name": "노원24시N동물의료센터",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "02-919-0078"
+  },
+  {
+    "region": "서울특별시",
+    "address": "구로구 오류동 48-1",
+    "name": "금강종합동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "02-2686-8008"
+  },
+  {
+    "region": "서울특별시",
+    "address": "구로구 구로동 501-12",
+    "name": "벨라동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류, 조류",
+    "phoneNumber": "02-859-8775"
+  },
+  {
+    "region": "서울특별시",
+    "address": "은평구 연서로 162",
+    "name": "연서동물종합병원",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류, 양서류",
+    "phoneNumber": "02-358-7582"
+  },
+  {
+    "region": "서울특별시",
+    "address": "송파구 동남로 161 청공빌딩 101호",
+    "name": "에코동물병원",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류, 양서류",
+    "phoneNumber": "02-443-2222"
+  },
+  {
+    "region": "서울특별시",
+    "address": "관악구 신림로 265",
+    "name": "한성동물병원",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류, 양서류, 어류",
+    "phoneNumber": "02-872-7609"
+  },
+  {
+    "region": "서울특별시",
+    "address": "강남구 논현로 132길 24 양현빌딩2층",
+    "name": "최영민동물의료센터",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류, 양서류, 어류",
+    "phoneNumber": "02-546-9539"
+  },
+  {
+    "region": "세종특별자치시",
+    "address": "마음로 241 지상1",
+    "name": "고운동물병원",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류",
+    "phoneNumber": "044-865-9575"
+  },
+  {
+    "region": "울산광역시",
+    "address": "남구 봉원로 104",
+    "name": "리틀쥬동물병원",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류",
+    "phoneNumber": "052-268-8894"
+  },
+  {
+    "region": "인천광역시",
+    "address": "서구 라임로 102",
+    "name": "청라라임동물병원",
+    "treatedAnimals": "포유류 특수동물, 파충류",
+    "phoneNumber": "032-563-1900"
+  },
+  {
+    "region": "인천광역시",
+    "address": "부평구 부평대로 138 2층",
+    "name": "24시부평종합동물의료센터",
+    "treatedAnimals": "포유류 특수동물, 파충류",
+    "phoneNumber": "032-511-6836"
+  },
+  {
+    "region": "전라북도",
+    "address": "익산시 공봉로 79",
+    "name": "전북대 전북동물의료센터",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류",
+    "phoneNumber": "063-850-0970"
+  },
+  {
+    "region": "제주특별자치도",
+    "address": "중앙로 273",
+    "name": "제주키움동물병원",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류",
+    "phoneNumber": "064-725-7579"
+  },
+  {
+    "region": "충청북도",
+    "address": "청주시 서원구 충대로 1 충북대학교 수의학대학 동물의료센터",
+    "name": "충북대학교 동물병원",
+    "treatedAnimals": "포유류 특수동물, 조류, 파충류, 어류",
+    "phoneNumber": "043-261-2602"
+  }
+]
