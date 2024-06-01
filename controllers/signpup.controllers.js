@@ -1,4 +1,5 @@
 const User = require("../models/user.model");
+const bcrypt = require("bcrypt");
 
 exports.signup = async (req, res) => {
   const { username, password, nickname, pet } = req.body;
@@ -10,10 +11,16 @@ exports.signup = async (req, res) => {
   }
 
   try {
-    const newUser = await User.create({ username, password, nickname, pet });
-    res
-      .status(200)
-      .json({ success: true, message: "회원가입 성공", user: newUser });
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const newUser = new User({
+      username,
+      password: hashedPassword,
+      nickname,
+      pet,
+    });
+
+    await newUser.save();
+    res.status(201).json({ success: true, message: "회원가입 성공" });
   } catch (error) {
     console.error("회원가입 중 오류 발생:", error);
     res

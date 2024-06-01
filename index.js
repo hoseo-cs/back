@@ -26,8 +26,11 @@ app.use("/api/hospitals", hospitalRoute);
 // 라우트 설정
 const signupRoute = require("./routes/signup");
 const { checkUsername } = require("./controllers/check.controllers.js");
+const loginRoute = require("./routes/login.route.js");
+const { updateSecretKey } = require("./utils/createJWT.js");
 app.use("/api/signup", signupRoute);
-app.use('/api/check', checkUsername);
+app.use("/api/check", checkUsername);
+app.use("/api/login", loginRoute);
 
 app.listen(3001, () => {
   console.log("서버 3001에서 돌아가는 중입니당");
@@ -46,7 +49,7 @@ mongoose
   .connect(uri)
   .then(async () => {
     console.log("-------몽고 db 연결 완료!--------");
-
+    updateSecretKey();
     // 연결 종료 (조건부로 시행하기)
     // mongoose.connection.close();
   })
