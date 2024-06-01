@@ -27,10 +27,12 @@ app.use("/api/hospitals", hospitalRoute);
 const signupRoute = require("./routes/signup");
 const { checkUsername } = require("./controllers/check.controllers.js");
 const loginRoute = require("./routes/login.route.js");
+const userRoute = require('./routes/user.route.js'); 
 const { updateSecretKey } = require("./utils/createJWT.js");
 app.use("/api/signup", signupRoute);
 app.use("/api/check", checkUsername);
 app.use("/api/login", loginRoute);
+app.use('/api/user', userRoute);  // 사용자 정보 라우터 추가
 
 app.listen(3001, () => {
   console.log("서버 3001에서 돌아가는 중입니당");

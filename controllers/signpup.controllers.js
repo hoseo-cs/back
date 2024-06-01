@@ -2,9 +2,9 @@ const User = require("../models/user.model");
 const bcrypt = require("bcrypt");
 
 exports.signup = async (req, res) => {
-  const { username, password, nickname, pet } = req.body;
+  const { username, password, nickname, pet, city, district } = req.body;
 
-  if (!username || !password || !nickname || !pet) {
+  if (!username || !password || !nickname || !pet || !city || !district) {
     return res
       .status(400)
       .json({ success: false, message: "모든 필드를 입력해 주세요." });
@@ -14,9 +14,11 @@ exports.signup = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
     const newUser = new User({
       username,
-      password: hashedPassword,
+      password,
       nickname,
       pet,
+      city,
+      district,
     });
 
     await newUser.save();
