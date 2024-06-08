@@ -21,12 +21,14 @@ const loginRoute = require("./routes/login.route.js");
 const userRoute = require("./routes/user.route.js");
 const { updateSecretKey } = require("./utils/createJWT.js");
 const uploadRoute = require("./routes/upload.route.js");
+const postRoute = require("./routes/post.route.js");
 
 app.use("/api/signup", signupRoute);
 app.use("/api/check", checkUsername);
 app.use("/api/login", loginRoute);
 app.use("/api/user", userRoute);
 app.use("/api/upload", uploadRoute);
+app.use("/api/post", postRoute);
 
 app.get("/", (req, res) => {
   res.send("get요청 updated!!");
