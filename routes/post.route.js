@@ -65,9 +65,29 @@ router.get("/:postId", async (req, res) => {
   try {
     const post = await Post.findById(postId);
     if (!post) {
-      return res.status(404).json({ status: "error", message: "게시물을 찾을 수 없습니다." });
+      return res
+        .status(404)
+        .json({ status: "error", message: "게시물을 찾을 수 없습니다." });
     }
     res.json({ status: "success", post });
+  } catch (error) {
+    res.status(500).json({ status: "error", error: error.message });
+  }
+});
+
+// 검색된 게시물 가져오기
+router.get("/search/:keyword", async (req, res) => {
+  const encodedKeyword = req.params.keyword;
+  const keyword = decodeURIComponent(encodedKeyword);
+  console.log("Decoded keyword:", keyword); // 디코딩된 키워드 로그 출력
+  try {
+    const posts = await Post.find({
+      $or: [
+        { title: { $regex: keyword, $options: "i" } },
+        { content: { $regex: keyword, $options: "i" } },
+      ],
+    });
+    res.json({ status: "success", posts });
   } catch (error) {
     res.status(500).json({ status: "error", error: error.message });
   }
