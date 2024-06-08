@@ -6,5 +6,7 @@
 npm init -y
 npm i express
 npm i nodemon -d
-npm i mongodb
+npm install mongodb@5.9.1
+multer호환떄문
 npm i mongoose
+npm install mongodb@5.9.1

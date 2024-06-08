@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema({
   pet: { type: String, required: true },
   city: { type: String, required: true },
   district: { type: String, required: true },
+  profile: { type: String },
 });
 
 userSchema.pre("save", async function (next) {

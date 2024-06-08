@@ -37,7 +37,14 @@ exports.login = async (req, res) => {
     const token = jwt.sign(payload, process.env.JWT_SECRET, {
       expiresIn: "1h",
     });
-    res.status(200).json({ success: true, message: "로그인 성공", token });
+    res
+      .status(200)
+      .json({
+        success: true,
+        message: "로그인 성공",
+        token,
+        username: user.username,
+      });
   } catch (error) {
     console.error("로그인 중 오류 발생:", error);
     res
