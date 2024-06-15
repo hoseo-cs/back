@@ -36,7 +36,11 @@ app.get("/", (req, res) => {
 
 const mongoURI = process.env.MONGO_URI;
 mongoose
-  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(mongoURI, {
+    family: 4,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("||-----------------몽고 db 연결 완료!-------------------||");
     updateSecretKey();

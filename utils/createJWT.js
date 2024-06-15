@@ -20,7 +20,7 @@ function updateEnvFile(newSecretKey) {
 function updateSecretKey() {
   const newSecretKey = generateSecretKey();
   updateEnvFile(newSecretKey);
-  console.log("JWT 시크릿 키가 업데이트됨!:", newSecretKey);
+  //console.log("JWT 시크릿 키가 업데이트됨!:", newSecretKey);
 }
 
 // 3시간마다 시크릿 키 업데이트

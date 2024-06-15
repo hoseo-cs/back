@@ -79,7 +79,7 @@ router.get("/:postId", async (req, res) => {
 router.get("/search/:keyword", async (req, res) => {
   const encodedKeyword = req.params.keyword;
   const keyword = decodeURIComponent(encodedKeyword);
-  console.log("Decoded keyword:", keyword); // 디코딩된 키워드 로그 출력
+  // console.log("Decoded keyword:", keyword); // 디코딩된 키워드 로그 출력
   try {
     const posts = await Post.find({
       $or: [
