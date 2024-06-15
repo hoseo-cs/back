@@ -45,8 +45,8 @@ mongoose
     console.log("||-----------------몽고 db 연결 완료!-------------------||");
     updateSecretKey();
   })
-  .catch(() => {
-    console.log("연결 실패");
+  .catch((error) => {
+    console.error("연결 실패: ", error);
   });
 
 app.listen(3001, () => {
