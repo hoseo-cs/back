@@ -49,6 +49,6 @@ mongoose
     console.error("연결 실패: ", error);
   });
 
-app.listen(3001, () => {
-  console.log("------>>서버 3001에서 돌아가는 중입니당<<-------");
+app.listen(3000, () => {
+  console.log("------>>서버 3000에서 돌아가는 중입니당<<-------");
 });
