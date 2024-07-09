@@ -1,6 +1,2 @@
-MongoParseError: Invalid scheme, 
-expected connection string to start with 
-"mongodb://" or "mongodb+srv://" 오류는 MongoDB 연결 문자열이
- 잘못되었음을 나타냅니다.
- MongoDB 연결 문자열은
-  반드시 mongodb:// 또는 mongodb+srv://로 시작해야 합니다.
+코드 정리하기
+코드 주석달기

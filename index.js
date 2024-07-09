@@ -9,6 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({ origin: "https://acare-dr.vercel.app" }));
+app.use(cors({ origin: "http://localhost:3000" }));
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(methodOverride("_method"));
@@ -31,7 +32,7 @@ app.use("/api/upload", uploadRoute);
 app.use("/api/post", postRoute);
 
 app.get("/", (req, res) => {
-  res.send("get요청 updated!!");
+  res.send("서버 접속 완료.");
 });
 
 const mongoURI = process.env.MONGO_URI;
