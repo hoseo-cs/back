@@ -7,9 +7,22 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
+const allowedOrigins = ["http://localhost:3000", "https://acare-dr.vercel.app"];
 
-app.use(cors({ origin: "https://acare-dr.vercel.app" }));
-app.use(cors({ origin: "http://localhost:3000" }));
+const corsOptions = {
+  origin: (origin, callback) => {
+    if (!origin) {
+      callback(null, true);
+    } else if (!allowedOrigins.includes(origin)) {
+      const msg = `The CORS policy for this site does not allow access from the specified origin: ${origin}`;
+      callback(new Error(msg), false);
+    } else {
+      callback(null, true);
+    }
+  },
+};
+app.use(cors(corsOptions));
+
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(methodOverride("_method"));
