@@ -32,9 +32,10 @@ router.post("/", upload.array("images", 4), async (req, res) => {
     });
 
     await newPost.save();
-
+    res.setHeader("Content-Type", "application/json");
     res.json({ status: "success", post: newPost });
   } catch (error) {
+    res.setHeader("Content-Type", "application/json");
     res.status(500).json({ status: "error", error: error.message });
   }
 });
@@ -43,8 +44,10 @@ router.post("/", upload.array("images", 4), async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     const posts = await Post.find();
+    res.setHeader("Content-Type", "application/json");
     res.json({ status: "success", posts });
   } catch (error) {
+    res.setHeader("Content-Type", "application/json");
     res.status(500).json({ status: "error", error: error.message });
   }
 });
@@ -97,7 +100,11 @@ router.get("/search/:keyword", async (req, res) => {
 router.get("/user/:userId/image/:filename", (req, res) => {
   const { filename } = req.params;
   const filePath = path.join(__dirname, "../uploads", filename);
-  res.sendFile(filePath);
+  res.sendFile(filePath, {
+    headers: {
+      "Content-Type": "image/jpeg", // 필요시 다른 이미지 타입으로 변경
+    },
+  });
 });
 
 module.exports = router;
