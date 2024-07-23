@@ -14,7 +14,7 @@ const corsOptions = {
     if (!origin) {
       callback(null, true);
     } else if (!allowedOrigins.includes(origin)) {
-      const msg = `The CORS policy for this site does not allow access from the specified origin: ${origin}`;
+      const msg = `The CORS policy  ${origin}`;
       callback(new Error(msg), false);
     } else {
       callback(null, true);
@@ -36,6 +36,7 @@ const userRoute = require("./routes/user.route.js");
 const { updateSecretKey } = require("./utils/createJWT.js");
 const uploadRoute = require("./routes/upload.route.js");
 const postRoute = require("./routes/post.route.js");
+const recordRoutes = require("./routes/record.route.js");
 
 app.use("/api/signup", signupRoute);
 app.use("/api/check", checkUsername);
@@ -43,6 +44,7 @@ app.use("/api/login", loginRoute);
 app.use("/api/user", userRoute);
 app.use("/api/upload", uploadRoute);
 app.use("/api/post", postRoute);
+app.use("/api/record", recordRoutes);
 
 app.get("/", (req, res) => {
   res.send("서버 접속 완료.");
